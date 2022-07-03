@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+}
+
+.main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+header {
+	height: 80px;
+	background-color: #0ba76c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+h1 {
+	color: #e7fdf5;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+.btn-add {
+	height: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 800px;
+}
+
+th {
+	background-color: #0ba76c;
+	width: 25%;
+	color: #fff;
+}
+
+th, td {
+	text-align: left;
+	padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #e7fdf5;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+	height: 30px;
+	width: 300px;
+	padding: 5px;
+	font-size: 95%;
+}
+
+.btn-save {
+	box-sizing: content-box;
+	display: inline-block;
+	height: 20px;
+	width: 100px;
+	padding: 5px 10px;
+	font-size: 18px;
+	letter-spacing: 0.25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.msg-no-record {
+	width: 800px;
+	text-align: center;
+	background-color: #e7fdf5;
+	padding: 10px;
+}
