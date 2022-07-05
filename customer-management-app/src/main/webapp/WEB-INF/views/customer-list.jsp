@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/styles.css" />"></link>
+	href="<c:url value="/resources/css/styles.css?v=4" />"></link>
 <title>Customer Management Console</title>
 </head>
 <body>
@@ -39,11 +39,11 @@
 									<td>${customer.firstName}</td>
 									<td>${customer.lastName}</td>
 									<td>${customer.email}</td>
-									<td><a
-										href="${pageContext.request.contextPath}/customer/update?id=${customer.id}">Update</a>
-										| <a
-										href="${pageContext.request.contextPath}/customer/delete?id=${customer.id}"
-										onclick="return confirm('Are you sure you want to delete ${customer.firstName} ${customer.lastName}?')">Delete</a></td>
+									<td>
+										<a href="${pageContext.request.contextPath}/customer/update?id=${customer.id}">Update</a> | 
+										<a href="${pageContext.request.contextPath}/customer/delete?id=${customer.id}"
+										onclick="return confirm('Are you sure you want to delete ${customer.firstName} ${customer.lastName}?')">Delete</a>
+									</td>
 								</tr>
 							</c:forEach>
 						</tbody>
